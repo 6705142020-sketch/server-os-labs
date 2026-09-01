@@ -1,15 +1,15 @@
 ===BEGIN LAB1 SUBMISSION===
 student_id: 6705142020
-timestamp: 2026-09-01T04:18:00Z
+timestamp: 2026-09-01T04:43:31Z
 hostname: ubuntu
 ---[user: getent passwd]---
-(MISSING user alice597)
+alice597:x:1001:1001::/home/alice597:/bin/sh
 ---[group: getent group]---
-(MISSING group netadmins)
+netadmins:x:1001:
 ---[user-in-group: id]---
-(cannot id alice597)
+uid=1001(alice597) gid=1001(netadmins) groups=1001(netadmins)
 ---[file stat: home file mode/owner]---
-(MISSING file report_8034.txt)
+/home/alice597/report_8034.txt mode=750 owner=alice597 group=netadmins
 ---[sshd effective config]---
 port 22
 permitrootlogin yes
